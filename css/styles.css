@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary Colors */
+    --dark-cyan: #352EF2;
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayis-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pattern-top {
+    width: 100%;
+    position: relative;
+    bottom: 45%;
+    right: 50%;
+}
+
+.pattern-bottom {
+    width: 100%;
+    position: relative;
+    top: 60%;
+    left: -50%;
+}
+
+.cuadro-principal {
+    width: 352px;
+    height: 375px;
+    background-color: #ffffff;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    align-content: center;
+    border-radius: 4%;
+    box-shadow: 0px 50px 100px -20px rgba(8, 69, 94, 0.4);
+}
+
+.foto-perfil {
+    width: 100px;
+    position: relative;
+    align-self: center;
+    bottom: -5em;
+    border-radius: 50px;
+    border: 5px solid rgb(250, 250, 250);
+    margin-bottom: 5em;
+}
+
+.datos {
+    text-align: center;
+    font-weight: small;
+    line-height: 1.6em;
+}
+
+.datos h1 span {
+    color: var(--dark-gray);
+    padding: 0 2px;
+    font-weight: 500;
+}
+
+.datos p {
+    color: var(--dark-gray);
+    font-size: 1em;
+}
+
+.informacion {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #cecece;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    line-height: 1.1em;
+}
+
+.informacion small {
+    color: var(--dark-gray);
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+article h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: bold;
+}
+
